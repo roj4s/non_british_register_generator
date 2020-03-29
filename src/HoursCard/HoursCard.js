@@ -91,10 +91,12 @@ class HoursCard extends Component {
 
     console.log(this.state.entries);
     let entries = this.state.entries.map((e) =>
-      <p><span>{e[0]}:{e[1]}  |  {e[2]}:{e[3]}</span></p> );
+      <p><strong>{e[0]}:{e[1]}</strong>    |  <strong>{e[2]}:{e[3]}</strong></p> );
 
     return (
-      <h1>{entries}</h1>
+      <div className="HoursCard dark-primary-color">
+        {entries}
+      </div>
     );
 
   }
