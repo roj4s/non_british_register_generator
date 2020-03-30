@@ -9,6 +9,9 @@ Esse sistema web, muito simples, gera registros que não seguem o padrão do
 registro britãnico. Ele foi desenvolvido utilizando o framework de
 desenvolvimento Web ReactJs. Para fazer deploy é utilizado o docker.
 
+O site esta ativo em [Heroku](https://registronaobritanico.herokuapp.com/)
+
+
 ## Deploy
 
 Primeiro construir o container:
