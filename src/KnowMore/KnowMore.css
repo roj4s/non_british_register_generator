@@ -2,21 +2,21 @@
   padding: 100px;
   padding-right: 15vw;
   padding-left: 15vw;
-  height: 100vh;
+  height: 100%;
   font-size: calc(10px + 2vmin);
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
   text-align: justify;
   letter-spacing: 0.5px;
   line-height: 50px;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .GithubLogo{
-
- text-align: center;
  margin-top: 20vh;
- height: 50px;
-
 }
 
 .GithubLogoImg{

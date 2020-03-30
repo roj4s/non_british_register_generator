@@ -20,8 +20,9 @@ class KnowMore extends Component {
       a não utilização de registros que seguem o padrão do registro britãnico como
       prova de marcação de ponto.</p>
       <p>Esse sistema web, muito simples, simula registros que não seguem o padrão
-      do registro britãnico. Ele foi desenvolvido utilizando o framework de desenvolvimento Web ReactJs. Para fazer deploy é utilizado
-      o Docker.</p><div className='GithubLogo'><a
+      do registro britãnico. Ele foi desenvolvido utilizando o framework de
+      desenvolvimento web ReactJs. Para fazer deploy é utilizado
+      o Docker.</p><div className="GithubLogo"><a
       href="https://github.com/roj4s/non_british_register_generator"><img
       className="GithubLogoImg" src='github-logo.png'
       /></a></div></div>
