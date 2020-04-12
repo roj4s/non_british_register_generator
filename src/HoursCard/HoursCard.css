@@ -1,6 +1,5 @@
 .HoursCard {
   text-align: center;
-  #background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,4 +7,48 @@
   justify-content: center;
   font-size: calc(10px + 8vmin);
   color: white;
+}
+
+.hour-items{
+ display: flex;
+ flex-direction: column;
+ padding-top: 10vh;
+}
+
+@keyframes down-arrows-up-down {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.down-arrows {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20vh;
+  animation-name: down-arrows-up-down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.down-arrows:hover {
+  cursor: default;
+}
+
+.down-arrows i {
+  line-height: 0.3;
+  font-size: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

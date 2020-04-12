@@ -20,6 +20,7 @@ class HoursCard extends Component {
       journey_duration: 493 // minutes
       };
     this.generateHours = this.generateHours.bind(this);
+    this.scroll = this.scroll.bind(this);
   }
 
   randomInt(s ,e) {
@@ -87,6 +88,12 @@ class HoursCard extends Component {
 
   }
 
+  scroll() {
+    console.log(this.props);
+        if(this.props.scrollRef)
+            this.props.scrollRef.current.scrollHere.current.scrollIntoView({behavior: 'smooth'})
+  }
+
   render() {
 
     console.log(this.state.entries);
@@ -95,8 +102,15 @@ class HoursCard extends Component {
 
     return (
       <div className="HoursCard dark-primary-color">
+      <div className="hour-items">
         {entries}
       </div>
+      <span className="down-arrows" onClick={this.scroll} >
+        <i className="material-icons">keyboard_arrow_down</i>
+        <i className="material-icons">keyboard_arrow_down</i>
+      </span>
+      </div>
+
     );
 
   }
