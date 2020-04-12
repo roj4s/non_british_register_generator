@@ -121,17 +121,24 @@ class HoursCard extends Component {
     let entries = this.state.entries.map((e) =>
       <p><strong>{e[0]}:{e[1]}</strong>    |  <strong>{e[2]}:{e[3]}</strong></p> );
 
+    let reloadBtn = (<ThemeProvider theme={this.btnTheme}>
+                        <RoundedButton
+                            onClick={this.generateHours}
+                            size='large'
+                            variant="contained"
+                            color="primary"
+                        >
+                          <i className='material-icons'>update</i>
+                        </RoundedButton>
+                      </ThemeProvider>);
+
+    entries.splice(1, 0, reloadBtn);
+
     return (
       <div className="HoursCard dark-primary-color">
       <div className="hour-items">
         {entries}
       </div>
-        <ThemeProvider theme={this.btnTheme}>
-          <RoundedButton onClick={this.generateHours}  size='large' variant="contained" color="primary"
-      >
-             <i className='material-icons'>update</i>
-          </RoundedButton>
-        </ThemeProvider>
       <span className="down-arrows" onClick={this.scroll} >
         <i className="material-icons">keyboard_arrow_down</i>
         <i className="material-icons">keyboard_arrow_down</i>
