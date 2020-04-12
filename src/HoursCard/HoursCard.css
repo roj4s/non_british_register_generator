@@ -34,7 +34,7 @@
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
   animation-name: down-arrows-up-down;
   animation-duration: 1s;
   animation-iteration-count: infinite;

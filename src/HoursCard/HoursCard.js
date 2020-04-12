@@ -1,10 +1,31 @@
 import React, { Component } from 'react';
 import './HoursCard.css';
+import { Button  } from '@material-ui/core';
+import { createMuiTheme, withStyles, ThemeProvider  } from
+'@material-ui/core/styles';
+
+const RoundedButton = withStyles((theme) => ({
+  root: {
+      height: '65px',
+      width: '65px',
+      borderRadius: '100%'
+  },
+}))(Button);
+
 
 class HoursCard extends Component {
 
   constructor(props) {
     super(props);
+    this.btnTheme = createMuiTheme({
+      palette: {
+        primary: {
+          main: "#00c853",
+          contrastText: "#fff"
+        }
+      },
+    });
+
     this.state = {
       entries: [],
       entry_hourA: 6,
@@ -105,6 +126,12 @@ class HoursCard extends Component {
       <div className="hour-items">
         {entries}
       </div>
+        <ThemeProvider theme={this.btnTheme}>
+          <RoundedButton onClick={this.generateHours}  size='large' variant="contained" color="primary"
+      >
+             <i className='material-icons'>update</i>
+          </RoundedButton>
+        </ThemeProvider>
       <span className="down-arrows" onClick={this.scroll} >
         <i className="material-icons">keyboard_arrow_down</i>
         <i className="material-icons">keyboard_arrow_down</i>
