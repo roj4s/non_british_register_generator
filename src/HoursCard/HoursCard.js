@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HoursCard.css';
+import ConfigNavbar from '../ConfigNavbar/ConfigNavbar';
 import { Button  } from '@material-ui/core';
 import { createMuiTheme, withStyles, ThemeProvider  } from
 '@material-ui/core/styles';
@@ -135,6 +136,8 @@ class HoursCard extends Component {
     entries.splice(1, 0, reloadBtn);
 
     return (
+      <div>
+      <ConfigNavbar />
       <div className="HoursCard dark-primary-color">
       <div className="hour-items">
         {entries}
@@ -143,6 +146,7 @@ class HoursCard extends Component {
         <i className="material-icons">keyboard_arrow_down</i>
         <i className="material-icons">keyboard_arrow_down</i>
       </span>
+      </div>
       </div>
 
     );

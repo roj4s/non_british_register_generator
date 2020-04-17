@@ -12,7 +12,7 @@
 .hour-items{
  display: flex;
  flex-direction: column;
- padding-top: 10vh;
+ padding-top: 20vh;
  align-items: center;
 }
 
