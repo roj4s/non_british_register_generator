@@ -39,7 +39,7 @@ class HoursCard extends Component {
       lunch_minuteB: 0,
       lunch_durationA: 60, // minutes
       lunch_durationB: 75, // minutes
-      journey_duration: 493 // minutes
+      journey_duration: 480 // minutes
       };
     this.generateHours = this.generateHours.bind(this);
     this.scroll = this.scroll.bind(this);
